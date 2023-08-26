@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import 'ngx-toastr/toastr';
+.invalid-feedback{
+    display: block;
+}
+img.dark-logo {
+    width: 80%;
+}
+span.name-img {
+    background: white;
+    color: black;
+    padding: 6px 9px 7px 14px;
+    border-radius: 31px;
+    font-size: 27px;
+}
+

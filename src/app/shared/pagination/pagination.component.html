@@ -1,0 +1,29 @@
+<div
+	class="row col-md-12 justify-content-md-between align-items-md-center mt-2"
+>
+	<div class="col-sm-12 col-md-5">
+		<div
+			class="dataTables_info mb-2"
+			id="tickets-table_info"
+			role="status"
+			aria-live="polite"
+		>
+			Showing {{ pagination.startIndex }} to {{ pagination.endIndex }} of
+			{{ pagination.totalRecords }} entries
+		</div>
+	</div>
+	<!-- Pagination -->
+	<div class="col-sm-12 col-md-5">
+		<div class="text-md-right float-md-end pagination-rounded">
+			<ngb-pagination
+				[collectionSize]="pagination.totalRecords"
+				[maxSize]="pagination.maxSize ? pagination.maxSize : 5"
+				[(page)]="pagination.page"
+				[pageSize]="pagination.pageSize"
+				(pageChange)="onPageChange()"
+			>
+			</ngb-pagination>
+		</div>
+	</div>
+	<!-- End Pagination -->
+</div>
